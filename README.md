@@ -1,22 +1,11 @@
+**First go to config.json and fill the things what u want**
+
+**now go to config.js and fill all details**
 
 
+**Now in the console/terminal type this command: npm install**
 
 
+**now you can enjoy**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**This is the official bot of hydra**
-
-**this is only belongs to Joker, Guru**
+**ANY ERROR JOIN OUR [SERVER]()
