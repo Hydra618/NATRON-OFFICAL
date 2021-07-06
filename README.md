@@ -12,6 +12,6 @@
 
 
 
-**NOTE :- **
+**NOTE:-**
 
 **In this project some codes are not made so if you know coding u can add it**
