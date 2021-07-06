@@ -8,4 +8,4 @@
 
 **now you can enjoy**
 
-**ANY ERROR JOIN OUR [SERVER]()**
+**ANY ERROR JOIN OUR [SERVER](https://discord.gg/KFgjzvhQ7g)**
