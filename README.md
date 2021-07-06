@@ -9,3 +9,9 @@
 **now you can enjoy**
 
 **ANY ERROR JOIN OUR [SERVER](https://discord.gg/KFgjzvhQ7g)**
+
+
+
+**NOTE :- **
+
+**In this project some codes are not made so if you know coding u can add it**
