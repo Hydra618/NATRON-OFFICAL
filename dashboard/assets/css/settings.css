@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.sidebar {
+  height: 100%;
+  width: 220px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2rem 0 rgb(0 0 0 / 5%);
+  overflow: hidden;
+  transition: width 0.5s ease;
+  overflow-y: scroll;
+}
+.container.nav-closed .sidebar,
+.container.nav-closed .header-logo {
+  width: 0;
+}
+.top-rr {
+border-bottom: 1px solid #555
+}
+.botsettings {
+	border-radius: 10px;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+}
+button:focus { outline: none; }
+.main {
+  height: calc(100% - 50px);
+  display: flex;
+  flex: 1;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.site-logo {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  margin: 0 18px 0 15px;
+}
+.site-logo path {
+  fill: #fff;
+}
+.site-title {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.page-content {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1;
+}
+.page-content h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+.header-search {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+  flex: 1;
+}
+.header-search .button-menu {
+  width: 23px;
+  height: 23px;
+  margin-right: 15px;
+  background-color: #2f2f2f;
+  border: 0;
+  cursor: pointer;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.header-search input[type="search"] {
+  height: 100%;
+  width: 300px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 100;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.header-search input[type="search"]:focus {
+  outline: none;
+}
+.header-search input[type="search"]::placeholder {
+  color: #ccc;
+}
+.header-search .button-menu:focus {
+  outline: none;
+  border: none;
+}
+.header-search .button-menu svg path {
+  fill: #fff;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  white-space: nowrap;
+}
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background: #2f2f2f;
+}
+.sidebar ul li span {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.sidebar ul li i {
+  font-size: 18px;
+  color: #111;
+  font-weight: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #222222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+.section-container section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-container section h3 {
+  font-size: 40px;
+  color: #fff;
+  margin: 16px 0;
+}
+
+.section-container p {
+  padding: 8px 0;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+}
+
+.section-container .section-heading {
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #53d7ee;
+  border-bottom: 2px solid #53d7ee;
+  margin-bottom: 10px;
+}
+
+.guildIcon {
+  border-radius: 12px;
+}
+
+.guildName {
+  color: #7289da;
+}
+
+.prefix {
+  border-radius: 5px;
+  color: #222222;
+  background-color: #fff;
+}
+
+label {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #222222;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  color: #222222;
+  background-color: #fff;
+  border: 2px solid #222222;
+}
+
+h4 {
+  margin: 10px;
+  color: #fff;
+}
+
+select {
+  width: 150px;
+  height: 25px;
+  border: 0 !important;
+  text-align: center;
+  box-shadow: none;
+  background: #CEF6F5
+}
+
+.save-btn {
+  color: #fff;
+  background: #222222;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
