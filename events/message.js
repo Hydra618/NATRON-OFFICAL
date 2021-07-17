@@ -1,6 +1,6 @@
 const db = require("quick.db")
 const { addexp } = require("../handlers/xp.js");
-const defaultPrefix = ('../coinfig.json')
+const defaultPrefix = ('../config.json')
 const cooldown = 15000
 
 module.exports.run = async (client, message) => {
